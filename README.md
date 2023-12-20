@@ -1,14 +1,46 @@
 # ARCH2021 NLN
 
-This is the repeatability evaluation (RE) package for the
-ARCH-COMP21 Category Report: Continuous and Hybrid Systems with Nonlinear Dynamics
-of the 5th International
-Competition on Verifying Continuous and Hybrid Systems Friendly Competition
+This is the JuliaReach repeatability evaluation (RE) package for the ARCH-COMP
+2021 category report: Continuous and Hybrid Systems with Nonlinear Dynamics of
+the 5th International Competition on Verifying Continuous and Hybrid Systems
 (ARCH-COMP '21).
 
-*Note:* Running the full benchmark suite should take no more than two  hours with a reasonable internet connection (may take longer otherwise).
+To cite the work, you can use:
+
+```
+@inproceedings{GerettiAABCCDFKLSSW21,
+  author    = {Luca Geretti and
+               Julien Alexandre Dit Sandretto and
+               Matthias Althoff and
+               Luis Benet and
+               Alexandre Chapoutot and
+               Pieter Collins and
+               Parasara Sridhar Duggirala and
+               Marcelo Forets and
+               Edward Kim and
+               Uziel Linares and
+               David P. Sanders and
+               Christian Schilling and
+               Mark Wetzlinger},
+  editor    = {Goran Frehse and
+               Matthias Althoff},
+  title     = {{ARCH-COMP21} Category Report: Continuous and Hybrid Systems with
+               Nonlinear Dynamics},
+  booktitle = {{ARCH}},
+  series    = {EPiC Series in Computing},
+  volume    = {80},
+  pages     = {32--54},
+  publisher = {EasyChair},
+  year      = {2021},
+  url       = {https://doi.org/10.29007/2jw8},
+  doi       = {10.29007/2jw8}
+}
+```
 
 ## Installation
+
+*Note:* Running the full benchmark suite should take no more than two hours with
+a reasonable internet connection (may take longer otherwise).
 
 There are two ways to install and run this RE: either using the Julia script,
 or using the included Dockerfile. In both cases, first clone this repository:
@@ -25,7 +57,7 @@ you have installed Julia installed in your system, do
 ```shell
 $ julia startup.jl
 ```
-to run all the benchmarks. Afer this command has finished, the results will be stored
+to run all the benchmarks. After this command has finished, the results will be stored
 under the folder `result/results.csv` and the generated plots in your working directory.
 
 **Using the Docker container.** To build the container, you need the program `docker`.
